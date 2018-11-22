@@ -14,7 +14,7 @@ filelist=os.listdir("./image/")
 f=open('name','r',encoding='utf-8')
 name={}
 for line in f:
-    tmp=line.split()
+    tmp=line.split(' ')
     name[str(tmp[0])]=str(tmp[1])
 
 for file in filelist:
