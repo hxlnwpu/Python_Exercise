@@ -18,7 +18,7 @@ def getWord(filename):
 
 filelist=os.listdir("../Data/")   #读取文件夹下所有文件名
 for filename in filelist:
-    print(filename)
+    #print(filename)
     words=getWord("../Data/"+filename)
     count={}
     for word in words:
@@ -27,8 +27,8 @@ for filename in filelist:
     for word in words:
         if(word  in count):
             count[word]= count[word]+1
-    for (k,v) in  count.items(): 
-        print ("count[%s]=" % k,v )
+    #for (k,v) in  count.items(): 
+        #print ("count[%s]=" % k,v )
     print(filename+"中最重要的词是："+max(count,key=count.get))
 
 
