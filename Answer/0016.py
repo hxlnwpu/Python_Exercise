@@ -1,6 +1,6 @@
 #coding='utf-8'
 
-import os,xlsxwriter,json
+import os,xlsxwriter
 
 path=r"C:\Workspace\Python\Python_Exercise\Data\numbers.txt"
 workbook = xlsxwriter.Workbook(r"C:\Workspace\Python\Python_Exercise\Data\numbers.xlsx")
